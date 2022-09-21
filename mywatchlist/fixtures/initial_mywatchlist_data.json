@@ -1,0 +1,112 @@
+[
+    {
+        "model": "mywatchlist.MyWatchList",
+        "pk": 1,
+        "fields": {
+            "watched": false,
+            "title": "Mission Impossible 5",
+            "rating": 4,
+            "release_date": "1st of August, 2015",
+            "review": "Mission: Impossible - Rogue Nation is an action movie directed by Christopher McQuarrie and stars Tom Cruise, Jeremy Renner, Simon Pegg, Rebecca Ferguson, Ving Rhames, Sean Harris and Alec Baldwin.\nAfter watching this movie I have to admit that the franchise is improving with it's every release and setting new expectations with every release.\nThe movie starts with a breathtaking stunt and gives you goosebumps which can make your expectations skyrocketed and you will not be disappointed.\nThe plot of the movie is good and intelligently executed. The screenplay of the movie is nicely woven and with some good twists and turns the movie will keep you glued to the screen.\nActing is superb and stunts are the strongest factor of the movie as the movie is full of stunts. Cinematography is beautiful and locations are also very beautiful.\nOverall a great movie of the franchise and a must watch for all the action lovers.\n(Source: https://www.imdb.com/title/tt2381249/)"
+        }
+    },
+    {
+        "model": "mywatchlist.MyWatchList",
+        "pk": 2,
+        "fields": {
+            "watched": true,
+            "title": "Barbie Princess Charm School",
+            "rating": 3,
+            "release_date": "15th of March, 2011",
+            "review": "This was a terrific film I am not much into Barbie but i watched it with my little sister we were both amazed. I would recommend it to all little children because it is exiting and the Morrel of the \nstory is you can do anything you believe in they will fall in love with the story because it has drama,romance and comedy in also if your children \nbelieve in fairies then they would like this film too and if you liked this one I recommend watch all the other Barbie films like 'Barbie in a \n  Mermaids Tale' and 'Barbie Fairytopia ' 'the Barbie diaries etc so this is a perfect film for all girls who like Barbie they will truly love 'Barbie princess charm school' so watch it today !\n(Source: https://www.imdb.com/title/tt2066832/)"
+        }
+    },
+    {
+        "model": "mywatchlist.MyWatchList",
+        "pk": 3,
+        "fields": {
+            "watched": true,
+            "title": "Sofia the First: Once Upon a Princess",
+            "rating": 3,
+            "release_date": "18th of November, 2012",
+            "review": "This movie is about a little girl who moves into a castle with her mother and becomes a princess. Her name is Sophia. She has to put up with a step brother and step sister who play tricks on her. \nSophia gets a necklace from the king which has magic powers. I watched this movie with my 4 yr old son. We loved it. We can't wait til January 2013 \nfor the new series to start. So we can watch it weekly. It was very entertaining and funny. It was so good that it kept us waiting and watching to \nsee what would happen next. I give it 10 stars. I would recommend it to all who love to watch Disney shows and movies. Has very good morals to teach the children.\n(Source: https://www.imdb.com/title/tt2137286/)"
+        }
+    },
+    {
+        "model": "mywatchlist.MyWatchList",
+        "pk": 4,
+        "fields": {
+            "watched": true,
+            "title": "My Little Pony: Equestria Girls",
+            "rating": 3,
+            "release_date": "16th of June, 2013",
+            "review": "This movie was simply adorable. Though I have to say that many people are being unfair or unreasonable about it. Simply because the movie is not perfect does not mean it is terrible. I admit, it \nhas flaws, but the show is not flawless either. I admit that this was cute and entertaining. I went in with high expectations and left satisfied. My complaints \ncentered around a few scenes that were flat out pointless, which, luckily, are in short supply. Some of the new characters are not bad, but the \nfilm would do just fine without, and anyone who has seen the film will probably know what I am talking about.\nI feel bad for Hasbro and DHX because so few people liked the look of the \ntrailer and despised the idea despite how hard they worked on it. And now the companies are at risk of losing employees due to this reaction.\nGood movie that makes me eager for season 4.\n(Source: https://www.imdb.com/title/tt2908228/?ref_=tt_tpks_tt_i_2_pd_tp1_pbr_ic)"
+        }
+    },
+    {
+        "model": "mywatchlist.MyWatchList",
+        "pk": 5,
+        "fields": {
+            "watched": false,
+            "title": "Star Wars: The Rise of Skywalker",
+            "rating": 3,
+            "release_date": "18th of December, 2019",
+            "review": "In a galaxy far, far away ... so begins a couple of hours of a really poor portrayal of middle school level science or actually a good portrayal of failing m. s. science. For however far into the \nfuture we humans, if we're still here, will be exploring it might be to nearby stars w/robotics let alone the 100 billion of stars in our galaxy & further let alone some other galaxy. And, we won't be dressed, talking, behaving like early 20th century Americans. This film has the same predictable special \neffects CGI we've been seeing for decades. Same old Earth life comically modified into alien life. Dialogue really dumbed down and made even more incongruous given the technical level of each character.\n(Source: https://www.imdb.com/title/tt2527338/reviews?ref_=tt_urv)"
+        }
+    },
+    {
+        "model": "mywatchlist.MyWatchList",
+        "pk": 6,
+        "fields": {
+            "watched": true,
+            "title": "PAW Patrol: The Movie",
+            "rating": 3,
+            "release_date": "10th of December, 2021",
+            "review": "I saw some episodes of the PAW Patrol series when it was just on tv, so I knew what it was about and that kids like watching it and I had no problem with that.\nRyder and the rest of the pups on the team are all likable characters, the animation has improved since the show and is really pretty even the story fits with the theme of the show.\nThe villain is silly but I can see kids being entertained by it along with fun action and a pretty cool 3rd act, also there are effective emotional scenes.\nIts PAW Patrol The Movie, I got what I expected. Its for kids and I can see them really enjoying this even if you have never seen the show you will still like it.(Source: https://www.imdb.com/title/tt11832046/)"
+        }
+    },
+    {
+        "model": "mywatchlist.MyWatchList",
+        "pk": 7,
+        "fields": {
+            "watched": false,
+            "title": "Jumanji: The Next Level",
+            "rating": 3,
+            "release_date": "4th of December, 2019",
+            "review": "It's an entertaining sequel. The effects and the story (in the game) were surprisingly good for a sequel. It also took entirely too long to get into the game.\nWhat brought the movie down a notch is the tired troupe of grandpa has to have everything explained 20 times. And the overdone old man routine. Ugh. It gave me flashbacks of Jar Jar Binks. That and a miscast Awkwafina - maybe it's just me, but I found her to be incredibly annoying.\nIt is definitely NOT better than the last one, but isn't a flop either.\n(Source: https://www.imdb.com/title/tt7975244/)"
+        }
+    },
+    {
+        "model": "mywatchlist.MyWatchList",
+        "pk": 8,
+        "fields": {
+            "watched": false,
+            "title": "Pixels",
+            "rating": 3,
+            "release_date": "24th of July, 2015",
+            "review": "I felt the urge to write a review because unlike many negative reviews that prevented me watching the movie, it was really enjoyable and funny, \nand I really liked it. The idea is very smart and creative, and it was well made in a way that made comedy smooth and spontaneous without affectation.\n(Source: https://www.imdb.com/title/tt2120120/)"
+        }
+    },
+    {
+        "model": "mywatchlist.MyWatchList",
+        "pk": 9,
+        "fields": {
+            "watched": true,
+            "title": "Moana",
+            "rating": 4,
+            "release_date": "25th of November, 2016",
+            "review": "Wow, what a great great movie! The visuals in this movie are breathtaking!! They are so gorgeous! But, besides the visuals there is such a heart and \nimagination and creativity to this movie. Moana is such a likable, smart, and relatable person. the voice work for Moana is so sweet and so good. The chemistry between Moana and \nMaui is so great and so natural. The songs in this movie are so charming, catchy and fun! But, How Far I'll Go is such an emotional song and it has such heart...I dare say I like it a little more than Let It Go! The way Moana sings it and you can feel it!! Wow, I just looved this movie and it is great \nfor kids and adults. I will always love it and I wanna see it again!\n(Source: https://www.imdb.com/title/tt3521164/)"
+        }
+    },
+    {
+        "model": "mywatchlist.MyWatchList",
+        "pk": 10,
+        "fields": {
+            "watched": true,
+            "title": "Enchanted",
+            "rating": 4,
+            "release_date": "21st of November, 2007",
+            "review": "I had recently seen a screening of this movie and was pleasantly surprised that it had completely exceeded my expectations. The theater was full of \nlaughs from the beginning throughout all ages. In the beginning I was worried that Amy Adams would make Giselle seem like some obnoxious daytime children's television character, but \ninstead she managed to please the audience during the entire movie. There was also enough humor to keep the older viewers entertained from hilarious allusions to popular fairy tales and even some 'adult' themes insinuated, while still keeping the film Disney clean. Overall I completely enjoyed this \nmovie and recommend it to all families.\n(Source: https://www.imdb.com/title/tt0461770/)"
+        }
+    }
+]
