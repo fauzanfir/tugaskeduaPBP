@@ -2,21 +2,34 @@
 
 {% block content %}
 
-<h5>Selamat Datang,  </h5>
-<b>{{user}}</b>
-
 <style>
     table, th, td{
     border: 1px solid black;
   }
 </style>
 
-<table>
-    <tr>
-    <th>Tanggal</th>
-    <th>Judul</th>
-    <th>Deskripsi</th>
-    <th>Status</th>
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="mx-auto navbar-brand disabled" href="#">Selamat Datang, {{user}}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'todolist:logout' %}">Logout</a>
+          <a class="nav-link" href="{% url 'todolist:create_task' %}">Create Task</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+<table class="table table-hover w-50 mx-auto table-bordered">
+    <tr class="thead-dark">
+    <th scope="col" >Tanggal</th>
+    <th scope="col" >Judul</th>
+    <th scope="col" >Deskripsi</th>
+    <th scope="col" >Status</th>
+    <th scope="col" >Actions</th>
     </tr>
 
 {% for task in list_task %}
@@ -31,10 +44,8 @@
 {% endfor %}
 </table>
 
-<h5>Sesi terakhir login: {{ last_login }}</h5>
+<h5 class="w-50 mx-auto" >Sesi terakhir login: {{ last_login }}</h5>
 
-<button><a href="{% url 'todolist:create_task' %}">Create a new task</a></button>
-<button><a href="{% url 'todolist:logout' %}">Logout</a></button>
 
 {% endblock content %} 
  
