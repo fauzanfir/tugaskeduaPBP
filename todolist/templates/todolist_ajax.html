@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    table, th, td{
+    border: 1px solid black;
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="mx-auto navbar-brand disabled" href="#">Selamat Datang, {{user}}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'todolist:logout' %}">Logout</a>
+          <a class="nav-link" href="{% url 'todolist:create_task' %}">Create Task</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+<table class="table table-hover w-50 mx-auto table-bordered">
+    <tr class="thead-dark">
+    <th scope="col" >Tanggal</th>
+    <th scope="col" >Judul</th>
+    <th scope="col" >Deskripsi</th>
+    <th scope="col" >Status</th>
+    <th scope="col" >Actions</th>
+    </tr>
+
+{% for task in list_task %}
+    <tr>
+        <th>{{task.date}}</th>
+        <th>{{task.title}}</th>
+        <th>{{task.description}}</th>
+        <th>{{task.is_finished}}</th>
+        <td><button><a href="{% url 'todolist:update_task' task.id %}">Done</a></button></td>
+        <td><button><a href="{% url 'todolist:delete_task' task.id %}">Delete</a></button></td>
+    </tr>
+{% endfor %}
+</table>
+
+<h5 class="w-50 mx-auto" >Sesi terakhir login: {{ last_login }}</h5>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $.get("/todolist/json", function(data) {
+        data.map((each) =>
+            $('#table').append(`<tr>
+        <td>${each.fields.title}</td>
+        <td>${each.fields.description}</td>
+        </tr>`)
+        );
+        });
+    });
+</script>
+
+
+{% endblock content %} 
+ 

@@ -6,29 +6,60 @@
 
 {% block content %}  
 
-<div class = "login">
-    
-    <h1>Create A Task</h1>  
+<center>
+    <h1>Create Task</h1>
+<center>
 
-        <form method="POST" >  
-            {% csrf_token %}  
-            <table>  
-                {{ form.as_table }}  
-                <tr>  
-                    <td></td>
-                    <td><input type="submit" name="submit" value="Create Task"/></td>  
-                </tr>  
-            </table>  
-        </form>
+<div class="addtodolist d-flex justify-content-center align-items-center">
 
-    {% if messages %}  
-        <ul>   
-            {% for message in messages %}  
-                <li>{{ message }}</li>  
-                {% endfor %}  
-        </ul>   
-    {% endif %}
+    <form method="POST" action="" class="d-flex flex-column">
+      {% csrf_token %}
+      <div class="form d-flex flex-column justify-content-between gap-2">
+        <label for="title">Judul</label>
+        <input
+          name="title"
+          id="title"
+          placeholder="Title"
+        />
+      </div>
+      <div class="form d-flex flex-column justify-content-between gap-2">
+        <label for="deskripsi">Deskripsi</label>
+        <input
+          name="description"
+          id="description"
+          placeholder="Description"
+        />
+      </div>
+      <button class="btn btn-success">Submit</button>
+    </form>
+    <center>
+        <center id="message"></center>
+    <center>
+</div>
 
-</div>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('form').submit(function (event) {
+      const formData = {
+        csrfmiddlewaretoken: $('input[name="csrfmiddlewaretoken"]').val(),
+        title: $('#title').val(),
+        description: $('#description').val(),
+      };
+
+      $.ajax({
+        type: 'POST',
+        url: '/todolist/ajax/submit',
+        data: formData,
+        dataType: 'json',
+        encode: true,
+      }).done(function (data) {
+        $('#message').text(data.message);
+      });
+
+      event.preventDefault();
+    });
+  });
+</script>
 
 {% endblock content %}
